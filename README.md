@@ -7,7 +7,7 @@
 ## Installation
 
 1. Install Homebridge using the [official instructions](https://github.com/homebridge/homebridge/wiki).
-2. Install this plugin using: `sudo npm install -g homebridge-aqicn`.
+2. Install this plugin
 3. Update your configuration file. See sample config.json snippet below.
 
 ### Configuration
