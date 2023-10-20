@@ -49,7 +49,7 @@ export type Value = {
 };
 
 export type City = {
-  geo: Array<number>;
+  station: string;
   name: string;
   url: string;
 };
