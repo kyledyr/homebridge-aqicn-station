@@ -32,8 +32,8 @@ class AqicnPlatform implements DynamicPlatformPlugin {
     this.config = config as AqicnPlatformConfig;
     this.api = api;
 
-    if (this.config.location_gps?.length != 2) {
-      this.log.error('There must be both a latitude and longitude defined in location_gps.');
+    if (!this.config.station) {
+      this.log.error('There must be a station or city defined.');
       return;
     }
     if (!this.config.api_key) {
@@ -53,7 +53,7 @@ class AqicnPlatform implements DynamicPlatformPlugin {
       this.timer = undefined;
     }
 
-    axios.get<AqicnResponse>('https://api.waqi.info/feed/geo:' + this.config.location_gps![0] + ';' + this.config.location_gps![1] +
+    axios.get<AqicnResponse>('https://api.waqi.info/feed/' + this.config.station +
       '/?token=' + this.config.api_key!, { headers: { 'Content-Type': 'application/json' } })
       .then((response) => {
         if (response.status == 200) {
