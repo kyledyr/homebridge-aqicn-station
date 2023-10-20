@@ -4,7 +4,7 @@ export type AqicnPlatformConfig = {
   platform: PlatformName | PlatformIdentifier;
   name?: string;
   api_key?: string;
-  location_gps?: Array<number>;
+  station?: string;
   polling_minutes?: number;
   inactive_hours?: number;
 };
