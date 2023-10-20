@@ -1,12 +1,12 @@
 {
-  "displayName": "Homebridge aqicn",
-  "name": "homebridge-aqicn",
+  "displayName": "Homebridge aqicn station",
+  "name": "homebridge-aqicn-station",
   "version": "1.2.1",
   "description": "Air quality plugin for Homebridge using aqicn",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Sunoo/homebridge-aqicn.git"
+    "url": "git://github.com/kyledyr/homebridge-aqicn-station.git"
   },
   "keywords": [
     "homebridge-plugin",
@@ -34,9 +34,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/Sunoo/homebridge-aqicn/issues"
+    "url": "https://github.com/Sunoo/homebridge-aqicn-station/issues"
   },
-  "homepage": "https://github.com/Sunoo/homebridge-aqicn#readme",
+  "homepage": "https://github.com/Sunoo/homebridge-aqicn-station#readme",
   "scripts": {
     "clean": "rimraf ./dist",
     "build": "rimraf ./dist && tsc",
