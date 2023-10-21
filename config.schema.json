@@ -1,5 +1,5 @@
 {
-    "pluginAlias": "aqicn",
+    "pluginAlias": "aqicn-station",
     "pluginType": "platform",
     "singular": true,
     "headerDisplay": "[aqicn](http://aqicn.org) plugin for [Homebridge](https://github.com/nfarina/homebridge).",
