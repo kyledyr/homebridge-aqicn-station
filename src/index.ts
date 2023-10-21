@@ -17,8 +17,8 @@ import { AqicnData, AqicnErrorResponse, AqicnOkResponse, AqicnResponse } from '.
 let hap: HAP;
 let Accessory: typeof PlatformAccessory;
 
-const PLUGIN_NAME = 'homebridge-aqicn';
-const PLATFORM_NAME = 'aqicn';
+const PLUGIN_NAME = 'homebridge-aqicn-station';
+const PLATFORM_NAME = 'aqicn-station';
 
 class AqicnPlatform implements DynamicPlatformPlugin {
   private readonly log: Logging;
